@@ -16,43 +16,57 @@ export default function PreviewSquare({
   offset = 0,
 }: Props) {
   return (
-    <div className="previewContainer">
-      <div className="iframeContainer">
-        <iframe src={src} scrolling="no"></iframe>
+    <>
+      <div className="previewContainer">
+        <div className="iframeContainer">
+          <iframe src={src} scrolling="no"></iframe>
+        </div>
       </div>
       <p>{desc}</p>
       <style jsx>{`
         .previewContainer {
-          width: ${width}px;
           position: relative;
           top: ${offset}px;
         }
         .iframeContainer {
-          width: ${width}px;
-          height: ${height}px;
+          // height: ${height}px;
           // background-color: #d3d3d3aa;
           display: flex;
           align-items: center;
           flex-direction: column;
-          overflow: hidden;
+          // overflow: hidden;
           position: relative;
           bottom: ${offset}px;
         }
+        @media (max-width: ${width}px) {
+          iframe,
+          .iframeContainer,
+          .previewContainer,
+          p {
+            width: 100% !important;
+          }
+        }
         iframe {
+          display: block;
           border: none;
           background-color: white;
           width: ${width}px;
+          height: 100vh;
           height: ${height}px;
-          overflow: hidden;
-          position: relative;
-          top: ${offset}px;
+          // overflow: hidden;
+          // position: fixed;
+          // top: ${offset}px;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
         }
         p {
-          width: 100%;
+          // width: ${width}px;
           margin: 0;
-          padding: 5px;
+          padding: 5px 15px;
         }
       `}</style>
-    </div>
+    </>
   );
 }

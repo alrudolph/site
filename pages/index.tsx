@@ -6,13 +6,13 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* <Page>
+      <Page>
         <div>
-          <h1>Hello</h1>
+          {/* <h1>Hello</h1> */}
           <WebPage />
         </div>
       </Page>
-      <footer></footer> */}
+      <footer></footer>
 
       <style jsx>{`
         a {

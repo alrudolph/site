@@ -5,18 +5,20 @@ import Footer from "./footer";
 
 export default function Page({ children }) {
   return (
-    <div id="container">
-      <div id="centered">
-        <Head>
-          <title>Alex Rudolph</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Header />
-        <article>
-          <main>{children}</main>
-        </article>
-        <Footer />
+    <>
+      <Head>
+        <title>Alex Rudolph</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <div id="container">
+        <div id="centered">
+          <article>
+            <main>{children}</main>
+          </article>
+        </div>
       </div>
+      <Footer />
       <style jsx>
         {`
           #container {
@@ -45,6 +47,6 @@ export default function Page({ children }) {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </>
   );
 }
