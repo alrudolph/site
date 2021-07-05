@@ -22,6 +22,32 @@ export default function WebPage() {
           width={600}
           desc={"Santa Barbara County COVID Variant Streamgraph."}
         ></PreviewSquare>
+        <PreviewSquare
+          src={"https://dailynexusdata.github.io/crime-report/#arrtype"}
+          height={373}
+          width={600}
+          desc={"Santa Barbara County COVID Variant Streamgraph."}
+        ></PreviewSquare>
+        <PreviewSquare
+          src={"https://dailynexusdata.github.io/crime-report/#race"}
+          height={425}
+          width={600}
+          desc={"Santa Barbara County COVID Variant Streamgraph."}
+        ></PreviewSquare>
+        <PreviewSquare
+          src={
+            "https://dailynexusdata.github.io/crime-report/#interaction_by_race"
+          }
+          height={426}
+          width={600}
+          desc={"Santa Barbara County COVID Variant Streamgraph."}
+        ></PreviewSquare>
+        <PreviewSquare
+          src={"https://dailynexusdata.github.io/crime-report/#age"}
+          height={462}
+          width={600}
+          desc={"Santa Barbara County COVID Variant Streamgraph."}
+        ></PreviewSquare>
       </div>
       <style jsx>
         {`
