@@ -1,0 +1,1 @@
+import{S as o,i as l,s as i,t as r,h as m,g as c,G as s,d as u}from"../chunks/vendor-3f20fbab.js";function x(a){let t;return{c(){t=r("Hello, my name is Alex!")},l(e){t=m(e,"Hello, my name is Alex!")},m(e,n){c(e,t,n)},p:s,i:s,o:s,d(e){e&&u(t)}}}class f extends o{constructor(t){super();l(this,t,null,x,i,{})}}export{f as default};

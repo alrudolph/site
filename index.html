@@ -5,32 +5,48 @@
 		<meta name="description" content="" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-
-		
-
-		<link rel="modulepreload" href="/site/_app/start-239f4099.js">
-		<link rel="modulepreload" href="/site/_app/chunks/vendor-241c6ac0.js">
-		<link rel="stylesheet" href="/site/_app/assets/start-61d1577b.css">
-
-		<script type="module">
-			import { start } from "/site/_app/start-239f4099.js";
-			start({
-				target: document.body,
-				paths: {"base":"/site","assets":""},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: true,
-				trailing_slash: "never",
-				hydrate: null
-			});
-		</script>
+		<meta http-equiv="content-security-policy" content=""><title>Alex Rudolph</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b015c28f.css">
+	<link rel="modulepreload" href="/_app/start-735db15d.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-3f20fbab.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-1d360060.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-18130296.js">
 	</head>
 	<body>
 		<div id="svelte">
 
-			
-		</div>
+
+
+
+
+
+<main><header class="svelte-1ia9fi0"><nav class="svelte-1ia9fi0"><a href="./" class="svelte-1ia9fi0">Home</a>
+		<a href="./charts" class="svelte-1ia9fi0">Charts</a></nav>
+</header>
+	<div class="svelte-7l1h8s"><article class="svelte-7l1h8s">Hello, my name is Alex!</article></div>
+	<div></div>
+</main>
+
+
+		<script type="module" data-hydrate="sahqfw">
+		import { start } from "/_app/start-735db15d.js";
+		start({
+			target: document.querySelector('[data-hydrate="sahqfw"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-1d360060.js"),
+						import("/_app/pages/index.svelte-18130296.js")
+				],
+				params: {}
+			}
+		});
+	</script></div>
 	</body>
 </html>
